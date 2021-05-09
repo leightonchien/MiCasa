@@ -27,16 +27,7 @@ CREATE TABLE user_properties (
   state BOOLEAN,
   image_url VARCHAR(255),
   isProfileVisible BOOLEAN,
-  type VARCHAR(255),
-  UNIQUE (user_id)
-);
-
-CREATE TABLE type1 (
-  id SERIAL PRIMARY KEY NOT NULL,
-  name VARCHAR(255) NOT NULL,
-  rental BOOLEAN,
-  user_property_id INTEGER REFERENCES user_properties(id) ON DELETE CASCADE,
-  UNIQUE (user_property_id)
+  type VARCHAR(255)
 );
 
 
@@ -44,8 +35,7 @@ CREATE TABLE property_loc_points (
   id SERIAL PRIMARY KEY NOT NULL,
   user_property_id INTEGER REFERENCES user_properties(id) ON DELETE CASCADE,
   latitude FLOAT NOT NULL,
-  longitude FLOAT NOT NULL,
-  UNIQUE (user_property_id)
+  longitude FLOAT NOT NULL
 );
 
 
@@ -54,13 +44,11 @@ CREATE TABLE users_prefrences(
   id SERIAL PRIMARY KEY NOT NULL,
   user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
   bedroomNo INTEGER NOT NULL,
-  size INTEGER NOT NULL,
-  UNIQUE (user_id)
+  size INTEGER NOT NULL
 );
 
 CREATE TABLE user_searches(
   id SERIAL PRIMARY KEY NOT NULL,
   user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
-  description TEXT NOT NULL,
-  UNIQUE (user_id)
+  description TEXT NOT NULL
 );
