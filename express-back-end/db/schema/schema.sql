@@ -1,13 +1,9 @@
 -- Drop and recreate Users table (Example)
 DROP TABLE IF EXISTS users CASCADE;
 DROP TABLE IF EXISTS user_properties CASCADE;
-DROP TABLE IF EXISTS type1 CASCADE;
 DROP TABLE IF EXISTS property_loc_points CASCADE;
 DROP TABLE IF EXISTS users_prefrences CASCADE;
 DROP TABLE IF EXISTS user_searches CASCADE;
-
-
-
 
 
 CREATE TABLE users (
@@ -25,9 +21,8 @@ CREATE TABLE user_properties (
   description TEXT NOT NULL,
   address VARCHAR(255) NOT NULL,
   state BOOLEAN,
-  image_url VARCHAR(255),
-  isProfileVisible BOOLEAN,
-  type VARCHAR(255)
+  img_url VARCHAR(255),
+  isProfileVisible BOOLEAN
 );
 
 
@@ -37,7 +32,6 @@ CREATE TABLE property_loc_points (
   latitude FLOAT NOT NULL,
   longitude FLOAT NOT NULL
 );
-
 
 
 CREATE TABLE users_prefrences(
