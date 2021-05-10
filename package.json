@@ -1,0 +1,23 @@
+{
+  "name": "micasa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliottthomlison/MiCasa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elliottthomlison/MiCasa/issues"
+  },
+  "homepage": "https://github.com/elliottthomlison/MiCasa#readme",
+  "dependencies": {
+    "pg": "^8.6.0"
+  }
+}
