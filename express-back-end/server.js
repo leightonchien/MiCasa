@@ -3,6 +3,18 @@ const App = Express();
 const BodyParser = require('body-parser');
 const PORT = 8080;
 
+//Elliott's work
+const db = require('./db')
+const cors = require('cors');
+
+//get the map
+App.get('/api/v1/map')
+
+//get the favourites 
+App.get('/api/v1/favourites')
+
+//
+
 // Express Configuration
 App.use(BodyParser.urlencoded({ extended: false }));
 App.use(BodyParser.json());
