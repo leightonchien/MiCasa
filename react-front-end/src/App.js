@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 // import axios from 'axios';
-import NavBar from './components/NavBar'
+import Navbar from './components/Navbar/Navbar'
 import './App.css';
 
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <NavBar />
+      <div className="App">
+        <Navbar />
       </div>
     );
   }
