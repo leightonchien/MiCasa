@@ -15,6 +15,7 @@ import {
 function App() {
   return (
     <div className="App">
+      <Map/>
         <Router>
         {/* <NavBar /> */}
  
@@ -25,9 +26,9 @@ function App() {
           {/* <Route path="/home" component={Home}>
             <Home />
           </Route> */}
-          <Route path="/map" component={Map}>
+          {/* <Route path="/map" component={Map}>
             <Map />
-          </Route>
+          </Route> */}
           {/* <Route path="/favourites" component={Favourites}>
             <Favourites />
           </Route> */}
