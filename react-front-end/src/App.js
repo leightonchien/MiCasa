@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from "react";
 import './App.css';
 import Favourites from "./Components/Favourites";
 import Home from "./Components/Home";
@@ -8,18 +8,38 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from "react-router-dom";
 
+class App extends Component {
+    constructor() {
+      super();
+      this.state = {
+        name: "React",
+        isUserAuthenticated: true
+      };
+    }
 
-function App() {
-  return (
+    render() {
+          return (
     <div className="App">
         <Router>
         <NavBar />
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+        <Route
+                exact
+                path="/"
+                render={() => {
+                    return (
+                      this.state.isUserAuthenticated ?
+                      <Redirect to="/home" /> :
+                      <Redirect to="/map" /> 
+                    )
+                }}
+              />
           <Route path="/home" component={Home}>
             <Home />
           </Route>
@@ -32,7 +52,8 @@ function App() {
         </Switch>
     </Router>
     </div>
-  );
+    );
+  }
 }
 
 export default App;
