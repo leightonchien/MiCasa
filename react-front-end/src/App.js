@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
-import DankMemes from "./Components/DankMemes";
-import Features from "./Components/Features";
-import Pricing from "./Components/Pricing";
-import MoreDeets from "./Components/MoreDeets";
+import Favourites from "./Components/favourites";
+import Home from "./Components/home";
+import Map from "./Components/map";
 import NavBar from "./Components/Navbar"
 import {
   BrowserRouter as Router,
@@ -23,17 +22,14 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/features" component={Home}>
-              <Features />
+          <Route path="/home" component={Home}>
+              <Home />
           </Route>
           <Route path="/map" component={Map}>
-            <Pricing />
+            <Map />
           </Route>
-          <Route path="/deets" component={Map}>
-            <MoreDeets />
-          </Route>
-          <Route path="/dankmemes" component={Favourites}>
-            <DankMemes />
+          <Route path="/favourites" component={Favourites}>
+            <Favourites />
           </Route>
         </Switch>
     </Router>

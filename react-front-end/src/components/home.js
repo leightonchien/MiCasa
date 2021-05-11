@@ -1,11 +1,11 @@
 import React from 'react';
 
-const MoreDeets = () => {
+const Home = () => {
     return(
         <div className="App">
-            <h1>MoreDeets HOURS</h1>
+            <h1>Home</h1>
         </div>
     )
 }
 
-export default MoreDeets;
+export default Home;

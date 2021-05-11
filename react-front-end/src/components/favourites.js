@@ -1,11 +1,11 @@
 import React from 'react';
 
-const dank = () => {
+const Favourites = () => {
     return(
         <div className="App">
-            <h1>DANK HOURS</h1>
+            <h1>Favourites</h1>
         </div>
     )
 }
 
-export default dank;
+export default Favourites;

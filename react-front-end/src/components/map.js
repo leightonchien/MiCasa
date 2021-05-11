@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Feature = () => {
+const Map = () => {
     return(
         <div className="App">
-            <h1>Feature HOURS</h1>
+            <h1>Map</h1>
         </div>
     )
 }
 
-export default Feature;
+export default Map;
