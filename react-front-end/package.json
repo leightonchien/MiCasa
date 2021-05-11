@@ -5,8 +5,10 @@
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "axios": "^0.18.1",
+    "bootstrap": "^5.0.0",
     "contentful": "^8.3.5",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.6.0",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.8"
