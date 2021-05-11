@@ -1,38 +1,40 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
 import './App.css';
+import Favourites from "./Components/Favourites";
+import Home from "./Components/Home";
+import Map from "./Components/Map";
+import NavBar from "./Components/Navbar"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      message: 'Click the button to load data!'
-    }
-  }
 
-  fetchData = () => {
-    axios.get('/api/data') // You can simply make your requests to "/api/whatever you want"
-    .then((response) => {
-      // handle success
-      console.log(response.data) // The entire response from the Rails API
+function App() {
+  return (
+    <div className="App">
+        <Router>
+        <NavBar />
+ 
 
-      console.log(response.data.message) // Just the message
-      this.setState({
-        message: response.data.message
-      });
-    }) 
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <h1>{ this.state.message }</h1>
-        <button onClick={this.fetchData} >
-          Fetch Data
-        </button>        
-      </div>
-    );
-  }
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/home" component={Home}>
+            <Home />
+          </Route>
+          <Route path="/map" component={Map}>
+            <Map />
+          </Route>
+          <Route path="/favourites" component={Favourites}>
+            <Favourites />
+          </Route>
+        </Switch>
+    </Router>
+    </div>
+  );
 }
 
 export default App;
