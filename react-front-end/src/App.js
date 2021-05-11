@@ -17,8 +17,6 @@ function App() {
     <div className="App">
         <Router>
         <NavBar />
- 
-
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
