@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Favourites from "./Components/favourites";
-import Home from "./Components/home";
-import Map from "./Components/map";
+import Favourites from "./Components/Favourites";
+import Home from "./Components/Home";
+import Map from "./Components/Map";
 import NavBar from "./Components/Navbar"
 import {
   BrowserRouter as Router,

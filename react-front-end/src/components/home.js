@@ -1,12 +1,39 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+
+import placeholderImage from '../assets/calgary.jpg';
+import placeholderImage1 from '../assets/chicago.jpg';
+import placeholderImage2 from '../assets/vancouver.jpg';
+import placeholderImage3 from '../assets/newyork.jpg';
+
 
 const Home = () => {
     return(
-        <div className="App">
-            <h1>Home</h1>
+        <div>
+          <Container bg="danger">
+            <Row>
+                <Col>
+                    <Image src={placeholderImage} alt="One amazing photo!" fluid/>
+                </Col>
+                <Col>
+                    <Image src={placeholderImage1} alt="One amazing photo!" fluid/>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <Image src={placeholderImage2} alt="One amazing photo!" fluid/>
+                </Col>
+                <Col>
+                    <Image src={placeholderImage3} alt="One amazing photo!" fluid/>
+                </Col>
+            </Row>
+          </Container>
         </div>
     )
 }
+
+export default Home;
 
 // export default Home;++export default function Home() {
 //     const classes = useStyles();
