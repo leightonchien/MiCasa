@@ -1,7 +1,8 @@
 body {
-  background: #ff5f6d;
+  /* background: #ff5f6d;
   background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
-  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  background: linear-gradient(to right, #ff5f6d, #ffc371); */
+  background: lightblue;
   min-height: 100vh;
 }
 
@@ -21,4 +22,8 @@ i {
 
 .form-control.shadow-0:focus {
   box-shadow: none;
+}
+
+.font-italic {
+  font-size: 35px;
 }
