@@ -39,6 +39,7 @@ CREATE TABLE property_loc_points (
 CREATE TABLE prefrences(
   id SERIAL PRIMARY KEY NOT NULL,
   user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+  property_id INTEGER REFERENCES property(id) ON DELETE CASCADE,
   bedroomNo INTEGER NOT NULL,
   size INTEGER NOT NULL
 );
