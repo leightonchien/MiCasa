@@ -18,10 +18,10 @@ function Footer() {
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-          <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
+          <h6 class="text-uppercase font-weight-bold mb-4">Costumer Support</h6>
           <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="#" class="text-muted">For Women</a></li>
-            <li class="mb-2"><a href="#" class="text-muted">For Men</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Contact Us</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Help Centre</a></li>
             <li class="mb-2"><a href="#" class="text-muted">Stores</a></li>
             <li class="mb-2"><a href="#" class="text-muted">Our Blog</a></li>
           </ul>
@@ -29,15 +29,15 @@ function Footer() {
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
           <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#" class="text-muted">Account</a></li>
             <li class="mb-2"><a href="#" class="text-muted">Login</a></li>
             <li class="mb-2"><a href="#" class="text-muted">Register</a></li>
-            <li class="mb-2"><a href="#" class="text-muted">Wishlist</a></li>
-            <li class="mb-2"><a href="#" class="text-muted">Our Products</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Careers</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-6 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
-          <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+          <p class="text-muted mb-4">If you want to stay connected and stay in tune, sign up for our newsletter!</p>
           <div class="p-1 rounded border">
             <div class="input-group">
               <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0" />
