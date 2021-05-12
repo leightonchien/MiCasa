@@ -1,36 +1,63 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React, { Component } from "react";
 import './App.css';
+import CityImagesList from "./Components/CityImagesList.js"
+import BackgroundHeader from "./Components/BackgroundHeader.js"
+import Favourites from "./Components/Favourites";
+import Footer from "./Components/Footer"
+import Home from "./Components/Home";
+import Map from "./Components/Map";
+import NavBar from "./Components/Navbar"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from "react-router-dom";
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      message: 'Click the button to load data!'
+    constructor() {
+      super();
+      this.state = {
+        name: "React",
+        isUserAuthenticated: true
+      };
     }
-  }
 
-  fetchData = () => {
-    axios.get('/api/data') // You can simply make your requests to "/api/whatever you want"
-    .then((response) => {
-      // handle success
-      console.log(response.data) // The entire response from the Rails API
-
-      console.log(response.data.message) // Just the message
-      this.setState({
-        message: response.data.message
-      });
-    }) 
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <h1>{ this.state.message }</h1>
-        <button onClick={this.fetchData} >
-          Fetch Data
-        </button>        
-      </div>
+    render() {
+          return (
+    <div className="App">
+        <Router>
+        <NavBar />
+        <BackgroundHeader />
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+        <Route
+                exact
+                path="/"
+                render={() => {
+                    return (
+                      this.state.isUserAuthenticated ?
+                      <Redirect to="/home" /> :
+                      <Redirect to="/map" /> 
+                    )
+                }}
+              />
+          <Route path="/home" component={Home}>
+            <Home />
+          </Route>
+          <Route path="/map" component={Map}>
+            <Map />
+          </Route>
+          <Route path="/favourites" component={Favourites}>
+            <Favourites />
+          </Route>
+        </Switch>
+    </Router>
+    <CityImagesList />
+    <Footer />
+    </div>
     );
   }
 }
