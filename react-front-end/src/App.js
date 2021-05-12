@@ -7,7 +7,7 @@ import BackgroundHeader from "./components/BackgroundHeader.js";
 //import Favourites from "./components/favourites.js";
 import Footer from "./components/Footer.js";
 import Home from "./components/home";
-import Map from "./components/Map";
+import Map from "./components/Map/Map.js";
 import NavBar from "./components/Navbar";
 import {
   BrowserRouter as Router,
@@ -50,9 +50,9 @@ class App extends Component {
           <Route path="/home" component={Home}>
             <Home />
           </Route>
-          {/* <Route path="/map" component={Map}>
+          <Route path="/map" component={Map}>
             <Map />
-          </Route>  */}
+          </Route> 
            {/* <Route path="/favourites" component={Favourites}>
             <Favourites />
           </Route> */}
