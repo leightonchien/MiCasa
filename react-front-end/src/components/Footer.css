@@ -1,0 +1,17 @@
+.footer {
+  /* position: relative; */
+  /* margin: 0px;
+  padding: 0;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center; */
+  background:url("/assets/delicious.jpg")  repeat-x scroll top transparent; 
+  background-size:100% 130px;
+  height: 130px; 
+  width:100%; 
+  overflow:hidden;
+}

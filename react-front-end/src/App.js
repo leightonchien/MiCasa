@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import './App.css';
 import CityImagesList from "./Components/CityImagesList.js"
+import BackgroundHeader from "./Components/BackgroundHeader.js"
 import Favourites from "./Components/Favourites";
+import Footer from "./Components/Footer"
 import Home from "./Components/Home";
 import Map from "./Components/Map";
 import NavBar from "./Components/Navbar"
@@ -27,6 +29,7 @@ class App extends Component {
     <div className="App">
         <Router>
         <NavBar />
+        <BackgroundHeader />
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
@@ -53,6 +56,7 @@ class App extends Component {
         </Switch>
     </Router>
     <CityImagesList />
+    <Footer />
     </div>
     );
   }
