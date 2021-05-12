@@ -1,41 +1,68 @@
-import React from 'react';
+import React, { Component } from "react";
+
+
 import './App.css';
-//import Favourites from "./Components/Favourites";
-//import Home from "./Components/Home";
- import Map from "./components/Map/Map";
-// import NavBar from "./Components/Navbar"
+import CityImagesList from "./components/CityImagesList.js";
+import BackgroundHeader from "./components/BackgroundHeader.js";
+//import Favourites from "./components/favourites.js";
+import Footer from "./components/Footer.js";
+import Home from "./components/home";
+import Map from "./components/Map";
+import NavBar from "./components/Navbar";
 import {
   BrowserRouter as Router,
   Switch,
- // Route,
- // Link
+  Route,
+  Link,
+  Redirect
 } from "react-router-dom";
 
+class App extends Component {
+    constructor() {
+      super();
+      this.state = {
+        name: "React",
+        isUserAuthenticated: true
+      };
+    }
 
-function App() {
-  return (
+    render() {
+          return (
     <div className="App">
-      <Map/>
+      {/* <Map/> */}
         <Router>
-        {/* <NavBar /> */}
- 
-
+        <NavBar />
+        <BackgroundHeader />
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          {/* <Route path="/home" component={Home}>
+        <Route
+                exact
+                path="/"
+                render={() => {
+                    return (
+                      this.state.isUserAuthenticated ?
+                      <Redirect to="/home" /> :
+                      <Redirect to="/map" /> 
+                    )
+                }}
+              />
+          <Route path="/home" component={Home}>
             <Home />
-          </Route> */}
+          </Route>
           {/* <Route path="/map" component={Map}>
             <Map />
-          </Route> */}
-          {/* <Route path="/favourites" component={Favourites}>
+          </Route>  */}
+           {/* <Route path="/favourites" component={Favourites}>
             <Favourites />
           </Route> */}
         </Switch>
     </Router>
+    <CityImagesList />
+    <Footer />
     </div>
-  );
+    );
+  }
 }
 
 export default App;

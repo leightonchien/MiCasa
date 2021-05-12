@@ -14,18 +14,18 @@ const Home = () => {
           <Container bg="danger">
             <Row>
                 <Col>
-                    <Image src={placeholderImage} alt="One amazing photo!" fluid/>
+                    <Image src={placeholderImage} alt="One amazing photo!" width="500" height="250" fluid/>
                 </Col>
                 <Col>
-                    <Image src={placeholderImage1} alt="One amazing photo!" fluid/>
+                    <Image src={placeholderImage1} alt="One amazing photo!" width="500" height="250" fluid/>
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <Image src={placeholderImage2} alt="One amazing photo!" fluid/>
+                    <Image src={placeholderImage2} alt="One amazing photo!" width="500" height="250" fluid/>
                 </Col>
                 <Col>
-                    <Image src={placeholderImage3} alt="One amazing photo!" fluid/>
+                    <Image src={placeholderImage3} alt="One amazing photo!" width="500" height="250" fluid/>
                 </Col>
             </Row>
           </Container>
