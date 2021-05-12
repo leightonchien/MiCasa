@@ -1,4 +1,4 @@
-/* hero: {
+/* hero {
   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1578409760928-91924170cb81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')`,
   height: "450px",
   backgroundPosition: "center",
@@ -9,11 +9,11 @@
   justifyContent: "center",
   alignItems: "center",
   color: "#fff",
-},
+}
 
-container: {
+container {
   padding: "75px 0 75px",
-},
+}
 
 itemContainer: {
   width: "100%",
