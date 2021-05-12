@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './App.css';
+import CityImagesList from "./Components/CityImagesList.js"
 import Favourites from "./Components/Favourites";
 import Home from "./Components/Home";
 import Map from "./Components/Map";
@@ -51,6 +52,7 @@ class App extends Component {
           </Route>
         </Switch>
     </Router>
+    <CityImagesList />
     </div>
     );
   }
