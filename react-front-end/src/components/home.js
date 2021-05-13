@@ -10,13 +10,13 @@ import placeholderImage3 from '../assets/newyork.jpg';
 import './Home.css'
 
 const Home = () => {
-    return(    
-        
+    return(   
     <div>
         <div>
-            <p>Test</p>
+            <p id="mid-text">Let's find your <em>next</em>, <em>next</em>, or <strong><em>next</em></strong> home across anywhere in Canada!</p>
         </div>
         <div class="gallery">
+            <p id="test">TestTestTestTestTestTestTest</p>
             <figure class="gallery__item gallery__item--1">
             <img src={placeholderImage} class="gallery__img" alt="Image 1"/>
             </figure>

@@ -7,7 +7,7 @@ body .bbbootstrap {
 .bbbootstrap {
   padding: 40px;
   /*create space between top + bottom */
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   background-color: #2e9df7;
@@ -25,12 +25,8 @@ body .bbbootstrap {
   font-size: 30px;
 }
 
-
-
 .bbbootstrap form {
   position: relative;
-  /* width: 150px;
-  margin: 150px; */
   margin: auto;
   width: 50%;
 }

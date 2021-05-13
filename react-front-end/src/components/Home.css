@@ -40,3 +40,24 @@
   grid-row-start: 4;
   grid-row-end: 7;
 }
+
+#container{
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+
+#mid-text {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+#test{
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 15fr;
+  font-weight: bold;
+ 
+}
