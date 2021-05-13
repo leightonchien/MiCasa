@@ -1,5 +1,5 @@
 import React from 'react'
-import Favourites from './Favourites';
+//import Favourites from './Favourites';
 import './Footer.css';
 
 function Footer() {
