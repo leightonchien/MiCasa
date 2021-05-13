@@ -48,7 +48,6 @@ CREATE TABLE preferences(
   laundry VARCHAR(255) NOT NULL,
   parking BOOLEAN,
   available_date VARCHAR(255) NOT NULL
-
 );
 
 
