@@ -13,7 +13,7 @@ const Home = () => {
     return(   
     <div>
         <div>
-            <p id="mid-text">Let's find your <em>next</em>, <em>next</em>, or <strong><em>next</em></strong> home across anywhere in Canada!</p>
+            <p id="mid-text"><strong>Popular Cities in Canada</strong></p>
         </div>
         <div class="gallery">
             <p id="test">TestTestTestTestTestTestTest</p>
