@@ -1,13 +1,14 @@
 import React from 'react';
-import GoogleMapReact from 'google-map-react';
+import { GoogleMapReact, Marker } from 'google-map-react';
 
 
  import LocationMarker from './LocationMarker'
+ //import "./map.css";
 
 const Map = ({ center, zoom }) => {
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: '70vh', width: '80%' }}>
+    <div style={{ height: '80vh', width: '80vh' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: 'AIzaSyDxCqEWrgL6SHTrAJx22WSlr3Nl3owXo-c'}}
         defaultCenter={ center }
