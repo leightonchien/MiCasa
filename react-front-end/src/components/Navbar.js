@@ -5,11 +5,13 @@ import {
     Link
   } from "react-router-dom";
 
+import logo from './LeightonIcon.png';
+
 const NavBar = () => {
     return(
         <div className="App">
     <ReactBootStrap.Navbar collapseOnSelect expand="xl" bg="dark" variant="dark">
-  <ReactBootStrap.Navbar.Brand href="#home">MiCasa</ReactBootStrap.Navbar.Brand>
+  <ReactBootStrap.Navbar.Brand href="#home"><img src={logo} width="150" height="45"/></ReactBootStrap.Navbar.Brand>
   <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
     <ReactBootStrap.Nav className="ml-auto">
