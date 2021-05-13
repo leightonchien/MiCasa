@@ -16,8 +16,7 @@ function BackgroundHeader() {
       <input type="text" id="Form_Search" value="" placeholder="Search for your best result in our community" role="searchbox" class="InputBox " autocomplete="off" />
       {/* <input type="submit" id="Form_Go" class="Button" value="GO" /> */}
       </div>
-     
-</div>
+  </div>
   )
 }
 
