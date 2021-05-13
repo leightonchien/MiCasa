@@ -19,7 +19,6 @@ const Home = () => {
             <p id="mid-text"><strong>Popular Cities in Canada</strong></p>
         </div>
         <div class="gallery">
-            <p id="test">TestTestTestTestTestTestTest</p>
             <figure class="gallery__item gallery__item--1">
             <img src={placeholderImage} class="gallery__img" alt="Image 1"/>
             </figure>
@@ -39,7 +38,6 @@ const Home = () => {
             <p id="mid-text"><strong>How MiCasa works and helps you!</strong></p>
         </div>
         <div class="gallery">
-            {/* <p id="test">TestTestTestTestTestTestTest</p> */}
             <figure class="info__item info__item--1">
             <img src={placeholderImage4} class="info__img" alt="Image 1"/>
             </figure>
