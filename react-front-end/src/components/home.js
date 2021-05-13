@@ -2,10 +2,10 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Container, Row, Col, Image } from 'react-bootstrap';
 
-import placeholderImage from '../assets/calgary.jpg';
-import placeholderImage1 from '../assets/chicago.jpg';
-import placeholderImage2 from '../assets/vancouver.jpg';
-import placeholderImage3 from '../assets/newyork.jpg';
+import placeholderImage from '../assets/vancouver.jpg';
+import placeholderImage1 from '../assets/toronto.jpg';
+import placeholderImage2 from '../assets/calgary.jpg';
+import placeholderImage3 from '../assets/montreal.jpg';
 
 import './Home.css'
 
@@ -25,10 +25,10 @@ const Home = () => {
             </figure>
            
             <figure class="gallery__item gallery__item--1b">
-            <img src={placeholderImage} class="gallery__img" alt="Image 1"/>
+            <img src={placeholderImage2} class="gallery__img" alt="Image 1"/>
             </figure>
             <figure class="gallery__item gallery__item--2b">
-            <img src={placeholderImage1} class="gallery__img" alt="Image 1"/>
+            <img src={placeholderImage3} class="gallery__img" alt="Image 1"/>
             </figure>
             </div>
     </div>    
