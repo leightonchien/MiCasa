@@ -2,10 +2,10 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Container, Row, Col, Image } from 'react-bootstrap';
 
-import placeholderImage from '../assets/vancouver.jpg';
-import placeholderImage1 from '../assets/toronto.jpg';
-import placeholderImage2 from '../assets/calgary.jpg';
-import placeholderImage3 from '../assets/montreal.jpg';
+import placeholderImage from '../assets/calgary.jpg';
+import placeholderImage1 from '../assets/chicago.jpg';
+import placeholderImage2 from '../assets/vancouver.jpg';
+import placeholderImage3 from '../assets/newyork.jpg';
 
 import './Home.css'
 
