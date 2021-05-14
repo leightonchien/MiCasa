@@ -38,17 +38,16 @@ App.get('/api/data', (req, res) => {
   })
 });
 
-// App.get('/api/properties', (req, res) => {
-
-//   console.log('request received', req.url);
-//   db.query('SELECT * FROM property;').then((results) => {
-//     console.log('rows found:', results.rows);
-//     res.json(results.rows);
-//   }).catch((error) => {
-//     console.log('query error:', error);
-//     res.status(500).send(`Error: ${error}`);
-//   })
-// });
+App.get('/api/properties', (req, res) => {
+  console.log('request received', req.url);
+  db.query('SELECT * FROM property;').then((results) => {
+    console.log('rows found:', results.rows);
+    res.json(results.rows);
+  }).catch((error) => {
+    console.log('query error:', error);
+    res.status(500).send(`Error: ${error}`);
+  })
+});
 
 
 
