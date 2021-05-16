@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import GoogleMapReact from 'google-map-react';
+//import InfoWindow from 'google-map-react';
 import axios from "axios";
 
  import LocationMarker from './LocationMarker'
+ import Infobox from "./Infobox";
  //import "./map.css";
 
 const Map = ({ center, zoom }) => {
@@ -11,7 +13,7 @@ const Map = ({ center, zoom }) => {
   
   useEffect(() => {
     Promise.all([
-      axios.get("/api/properties")
+      axios.get("/api/properties"),
      ]).then((all) => {
        console.log('all', all);
        setProperties(all[0].data);
@@ -24,13 +26,19 @@ const Map = ({ center, zoom }) => {
   const locationMarkers = properties.map((property) => {
     // console.log('property', property);
     // console.log('type of', typeof property.latitude);
-    return (<LocationMarker lat={property.latitude} lng={property.longitude}/>)
+    return (<LocationMarker lat={property.latitude} lng={property.longitude} info={property}/>)
   })
 
+  const infoboxes = properties.map((property) => {
+    return (<Infobox lat={property.latitude} lng={property.longitude}/>)
+  })
   // Get data through useEffect promise request. 
   return (
     // Important! Always set the container height explicitly
-    <div style={{ height: '80vh', width: '80vh' }}>
+    <div style={{ height: '80vh',
+     width: '200vh',
+
+     }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: 'AIzaSyDxCqEWrgL6SHTrAJx22WSlr3Nl3owXo-c'}}
         defaultCenter={ center }
@@ -42,7 +50,9 @@ const Map = ({ center, zoom }) => {
         {/* Map through the data, and render multiple <LocationMarker/> */}
         {/* <LocationMarker lat={45.33} lng={-122.33}/> */}
         {locationMarkers}
+        {/* {infoboxes} */}
       </GoogleMapReact>
+
     </div>
   );
 }
@@ -51,7 +61,7 @@ const Map = ({ center, zoom }) => {
       lat: 49.282730,
       lng: -123.120735
     },
-    zoom: 14
+    zoom: 13
   };
 
 

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+//import axios from axios;
 
 import './App.css';
 import CityImagesList from "./components/CityImagesList.js";
@@ -8,6 +9,7 @@ import BackgroundHeader from "./components/BackgroundHeader.js";
 import Home from "./components/home.js";
 import Map from "./components/Map/Map.js";
 import NavBar from "./components/Navbar";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,7 +25,8 @@ class App extends Component {
         name: "React",
         isUserAuthenticated: true
       };
-    }
+    };
+ 
 
     render() {
           return (
@@ -57,11 +60,13 @@ class App extends Component {
           </Route> */}
         </Switch>
     </Router>
+    {/* <Infobox/> */}
     <CityImagesList />
     {/* <Footer /> */}
     </div>
     );
   }
 }
+
 
 export default App;

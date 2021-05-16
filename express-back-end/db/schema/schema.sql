@@ -2,7 +2,6 @@
 DROP TABLE IF EXISTS users CASCADE;
 DROP TABLE IF EXISTS property CASCADE;
 DROP TABLE IF EXISTS property_loc_points CASCADE;
-DROP TABLE IF EXISTS preferences CASCADE;
 DROP TABLE IF EXISTS favourites CASCADE;
 
 
@@ -23,25 +22,18 @@ CREATE TABLE property (
   img_url VARCHAR(255) NOT NULL,
   city VARCHAR(225),
   latitude FLOAT NOT NULL,
-  longitude FLOAT NOT NULL
-);
-
-
-
-
-CREATE TABLE preferences(
-  id SERIAL PRIMARY KEY NOT NULL,
-  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
-  minimum_price FLOAT NOT NULL,
-  bedroomNo INTEGER NOT NULL,
-  bathroomNo INTEGER NOT NULL,
-  size INTEGER NOT NULL,
-  pets BOOLEAN NOT NULL,
-  furnished BOOLEAN NOT NULL,
+  longitude FLOAT NOT NULL,
+  minimum_price VARCHAR(225),
+  bedroomNo VARCHAR(225),
+  bathroomNo VARCHAR(225),
+  size VARCHAR(225),
+  pets VARCHAR(225),
+  furnished VARCHAR(225),
   laundry VARCHAR(255) NOT NULL,
-  parking BOOLEAN NOT NULL,
-  available_date VARCHAR(255) NOT NULL
+  parking VARCHAR(225)
 );
+
+
 
 
 CREATE TABLE favourites(
