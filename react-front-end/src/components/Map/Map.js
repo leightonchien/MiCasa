@@ -21,7 +21,7 @@ const Map = ({ center, zoom }) => {
     });
   },[]);
 
-  // console.log('properties', properties);
+  
 
   const locationMarkers = properties.map((property) => {
     // console.log('property', property);

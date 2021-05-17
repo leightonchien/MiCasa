@@ -10,6 +10,7 @@ import Home from "./components/home.js";
 import Map from "./components/Map/Map.js";
 import NavBar from "./components/Navbar";
 
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -35,6 +36,7 @@ class App extends Component {
         <Router>
         <NavBar />
         <BackgroundHeader />
+        
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>

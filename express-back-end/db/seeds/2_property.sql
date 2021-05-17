@@ -7,6 +7,7 @@ values (3, 3, 'Oak st', 'https://github.com/elliottthomlison/MiCasa/blob/master/
 insert into property (id, user_id, address, img_url, city, latitude, longitude, minimum_price, bedroomNo, bathroomNo, size, pets, furnished, laundry, parking) 
 values (4, 4, '845 Meadow Ridge Street', 'https://github.com/elliottthomlison/MiCasa/blob/master/images/house3.jpg?raw=true', 'Vancouver', 49.233290, -123.128140, '1900$ permonth', '4 bedrooms', '3 bathrooms', '3100 SQF', 'no pets', 'furnished', '2 laundry', '6 parking spots');
 insert into property (id, user_id, address, img_url, city, latitude, longitude, minimum_price, bedroomNo, bathroomNo, size, pets, furnished, laundry, parking) 
-values (5, 5, 'UBC Street', 'https://github.com/elliottthomlison/MiCasa/blob/master/images/house4.jpg?raw=true', 'Vancouver', 49.26186392970191, -123.25496974780911,'2000$ permonth', '3 bedrooms', '2 bathrooms', '1900 SQF', 'no pets', 'unfurnished', '2 laundry', '2 parking spots');
+values (5, 5, 'UBC Street', 'https://github.com/elliottthomlison/MiCasa/blob/master/images/house4.jpg?raw=true', 'Vancouver', 49.26186392970191, -123.25496974780911,'2000$ permonth', '3 bedrooms', '2 bathrooms, '1900 SQF', 'no pets', 'unfurnished', '2 laundry', '2 parking spots');
+
 
 
