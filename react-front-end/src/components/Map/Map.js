@@ -61,7 +61,7 @@ const Map = ({ center, zoom }) => {
       lat: 49.282730,
       lng: -123.120735
     },
-    zoom: 13
+    zoom: 11
   };
 
 
