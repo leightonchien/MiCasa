@@ -12,7 +12,7 @@ To run the following project on your machine please follow the steps below:
 ### Backend setup:
 1. Create an <code> .env </code> in the main backend directory where you'll be providing the required API Keys. 
 2. Obtain an API key from **Google map** https://developers.google.com/maps/gmp-get-started Place these in the ```.env ``` file you created in the backend. 
-You will need to use the same Google Vision API Key for the Frontend setup as well so keep this handy for now.
+You will need to use the same Google map API Key for the Frontend setup as well so keep this handy for now.
 ### Frontend setup:
 3. Create an <code> .env </code> in the main frontend directory where you'll be providing the required API Keys. 
 4. Take the **Google map**  API key you obtained earlier for the backend setup and put this in the .env file. 
