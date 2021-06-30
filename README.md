@@ -15,16 +15,8 @@ it will push notify the user providing the listing details and can chat with the
 !['mobile3.png'](https://github.com/leightonchien/MiCasa/blob/master/images/mobile3.png)
 
 
-### Set preferences
-!['mobile5.png'](https://github.com/leightonchien/MiCasa/blob/master/images/mobile5.png)
-
-
 ### Listing view
 !['mobile7.png'](https://github.com/leightonchien/MiCasa/blob/master/images/mobile7.png)
-
-
-### Discover new/popular listings
-!['mobile8.png'](https://github.com/leightonchien/MiCasa/blob/master/images/mobile8.png)
 
 
 ### Chat view
