@@ -8,13 +8,13 @@ Walk around the neighbourhood, if any listings match your preferences,
 it will push notify the user providing the listing details and can chat with the owner directly.
 
 ### Home screen
-(https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4486.PNG)
+!['IMG_4486.PNG'](https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4486.PNG)
 
 ### Registration/Login
-(https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4487.PNG)
+!['IMG_4487.PNG'](https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4487.PNG)
 
 ### Set preferences
-(https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4489.PNG)
+!['IMG_4489.PNG'](https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4489.PNG)
 
 ## Initial Setup
 To run the following project on your machine please follow the steps below:  
