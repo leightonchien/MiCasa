@@ -8,16 +8,32 @@ Walk around the neighbourhood, if any listings match your preferences,
 it will push notify the user providing the listing details and can chat with the owner directly.
 
 ### Home screen
-!['IMG_4486.PNG'](https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4486.PNG)
+!['mobile1.png'](https://github.com/leightonchien/MiCasa/blob/master/images/mobile1.png)
+
 
 ### Registration/Login
-!['IMG_4487.PNG'](https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4487.PNG)
+!['mobile3.png'](https://github.com/leightonchien/MiCasa/blob/master/images/mobile3.png)
+
 
 ### Set preferences
-!['IMG_4489.PNG'](https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4489.PNG)
+!['mobile5.png'](https://github.com/leightonchien/MiCasa/blob/master/images/mobile5.png)
+
+
+### Listing view
+!['mobile7.png'](https://github.com/leightonchien/MiCasa/blob/master/images/mobile7.png)
+
+
+### Discover new/popular listings
+!['mobile8.png'](https://github.com/leightonchien/MiCasa/blob/master/images/mobile8.png)
+
+
+### Chat view
+!['mobile11.png'](https://github.com/leightonchien/MiCasa/blob/master/images/mobile11.png)
+
 
 ## Initial Setup
 To run the following project on your machine please follow the steps below:  
+
 ### Backend setup:
 1. Create an <code> .env </code> in the main backend directory where you'll be providing the required API Keys. 
 2. Obtain an API key from **Google map** https://developers.google.com/maps/gmp-get-started Place these in the ```.env ``` file you created in the backend. 
@@ -49,6 +65,12 @@ npm start
 ```
 http://localhost:3000/ 
 ```
+
+## Project Stack
+__Front-End:__ React, Axios, CSS, HTML, SASS, JavaScript
+
+__Back-End:__ Express, Node.js, PostgreSQL
+
 
 
 ## Dependencies
