@@ -1,13 +1,20 @@
 # MiCasa
 
-##Project Description
+## Project Description
+
 MiCasa is a mobile app that helps users to find available housing rental units without having to constantly check rental websites.
 An user can simply set preferences to what they look for in a rental, and forget it.
 Walk around the neighbourhood, if any listings match your preferences, 
 it will push notify the user providing the listing details and can chat with the owner directly.
 
+### Home screen
+(https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4486.PNG)
 
+### Registration/Login
+(https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4487.PNG)
 
+### Set preferences
+(https://github.com/leightonchien/MiCasa/blob/master/images/IMG_4489.PNG)
 
 ## Initial Setup
 To run the following project on your machine please follow the steps below:  
